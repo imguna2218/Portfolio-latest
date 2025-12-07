@@ -7,7 +7,7 @@ const Internship = () => {
 
   const internship = {
     company: 'Leantech Labs Pvt. Ltd.',
-    logo: 'https://via.placeholder.com/80?text=Leantech',
+    logo: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765108571/Screenshot_2025-12-07_172602_urcdju.png',
     title: 'Software Developer Intern',
     duration: 'Jan 2025 - Sep 2025',
     description: [

@@ -8,53 +8,28 @@ const Achievements = () => {
   const achievements = [
     {
       id: 1,
-      image: 'https://via.placeholder.com/200x150?text=Achievement+1',
+      image: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765109271/Screenshot_2025-12-07_173733_hd0wke.png',
       description: "Won 1st Prize at Siddartha Academy of Higher Education's Innovation Day for EvalX project.",
     },
     {
       id: 2,
-      image: 'https://via.placeholder.com/200x150?text=Achievement+2',
+      image: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765109193/vr_1_mrumhj.jpg',
       description: 'Won 1st prize in VR Siddartha International Hackathon, Code Geeks track.',
     },
     {
       id: 3,
-      image: 'https://via.placeholder.com/200x150?text=Achievement+3',
+      image: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765109064/hackit_1_cnneev.jpg',
       description: 'Won 1st prize in HackIT (college) in WEB DEVELOPMENT domain.',
     },
     {
       id: 4,
-      image: 'https://via.placeholder.com/200x150?text=Achievement+4',
+      image: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765109123/itgrp_1_p37dcq.jpg',
       description: 'Won 2nd Prize in MERN Stack Hackathon (Team Lead).',
     },
     {
       id: 5,
-      image: 'https://via.placeholder.com/200x150?text=Achievement+5',
+      image: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765109497/Screenshot_2025-12-07_174122_og4bhy.png',
       description: 'Awarded 100 Days, 50 Days badges on LeetCode for consistent performance.',
-    },
-    {
-      id: 6,
-      image: 'https://via.placeholder.com/200x150?text=Achievement+6',
-      description: 'TBD – User to fill',
-    },
-    {
-      id: 7,
-      image: 'https://via.placeholder.com/200x150?text=Achievement+7',
-      description: 'TBD – User to fill',
-    },
-    {
-      id: 8,
-      image: 'https://via.placeholder.com/200x150?text=Achievement+8',
-      description: 'TBD – User to fill',
-    },
-    {
-      id: 9,
-      image: 'https://via.placeholder.com/200x150?text=Achievement+9',
-      description: 'TBD – User to fill',
-    },
-    {
-      id: 10,
-      image: 'https://via.placeholder.com/200x150?text=Achievement+10',
-      description: 'TBD – User to fill',
     },
   ];
 

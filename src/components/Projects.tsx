@@ -8,7 +8,7 @@ const Projects = () => {
   const projects = [
     {
       name: 'EvalX - Online Code Execution Engine',
-      logo: 'https://via.placeholder.com/50?text=EvalX',
+      logo: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765108066/Upfoto_NpBlfTpHCOfAdkA81guvoMXeNwnLxWrk2atF5mxFvMsnt_1_tnvuet.jpg',
       description: [
         'Engineered a distributed, low-latency code evaluation engine in Rust',
         'Processing 120+ concurrent tests/sec with high reliability',
@@ -16,12 +16,12 @@ const Projects = () => {
         'Implemented Redis for caching and queue management',
       ],
       techStack: ['Rust', 'Isolate', 'Docker', 'AWS', 'Redis'],
-      github: 'https://github.com/imguna2218',
+      github: 'https://github.com/imguna2218/The-EvalX',
       demo: '#',
     },
     {
       name: 'PatrolX - Patrol Monitoring App',
-      logo: 'https://via.placeholder.com/50?text=PatrolX',
+      logo: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765108308/Screenshot_2025-12-07_172123_fdosyf.png',
       description: [
         'Architected a patrol monitoring app in React Native',
         'End-to-end incident management system with real-time updates',
@@ -34,7 +34,7 @@ const Projects = () => {
     },
     {
       name: 'SyncStream - Social Audio Streaming Platform',
-      logo: 'https://via.placeholder.com/50?text=SyncStream',
+      logo: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765108432/Screenshot_2025-12-07_172341_yotdrs.png',
       description: [
         'Developed a full-stack social audio streaming platform',
         'Real-time features using WebSockets for live interactions',
@@ -128,7 +128,7 @@ const Projects = () => {
                   <Github size={20} />
                   View on GitHub
                 </a>
-                <a
+                {/* <a
                   href={currentProject.demo}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -136,7 +136,7 @@ const Projects = () => {
                 >
                   <ExternalLink size={20} />
                   Live Demo
-                </a>
+                </a> */}
               </div>
             </motion.div>
           </AnimatePresence>

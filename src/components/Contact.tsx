@@ -14,24 +14,48 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      toast({
-        title: 'Message Sent!',
-        description: 'Thank you for reaching out. I will get back to you soon.',
+      // 1. Send data to FormSubmit AJAX endpoint
+      const response = await fetch("https://formsubmit.co/ajax/gunasekharparisa2218@gmail.com", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: "New Portfolio Contact!", // Custom subject line
+          _template: "table" // Makes the email look clean
+        })
       });
-      setFormData({ name: '', email: '', message: '' });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        toast({
+          title: 'Message Sent!',
+          description: 'Thank you for reaching out. I will get back to you soon.',
+        });
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        throw new Error('Form submission failed');
+      }
+
     } catch (error) {
+      console.error('Error:', error);
       toast({
         title: 'Error',
         description: 'Failed to send message. Please try again.',
@@ -88,6 +112,7 @@ const Contact = () => {
           >
             <div className="glass-effect rounded-3xl p-8">
               <h3 className="text-2xl font-bold text-primary mb-6">Send a Message</h3>
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">

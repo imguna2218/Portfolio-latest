@@ -34,7 +34,7 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-20">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-2 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -44,7 +44,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-primary rounded-full blur-2xl opacity-30" />
               <img
-                src="https://via.placeholder.com/200?text=Parisa+GP"
+                src="https://res.cloudinary.com/di4cyrn81/image/upload/v1765107938/WhatsApp_Image_2025-12-07_at_5.14.07_PM_vbjwr0.jpg"
                 alt="Parisa Gunasekhar"
                 className="relative w-48 h-48 rounded-full border-4 border-primary object-cover glow-effect"
               />
@@ -61,13 +61,13 @@ const Hero = () => {
               Software Developer
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-foreground">
-              Full-Stack Developer / EvalX
+              Full-Stack Developer / 2026 GRAD
             </h2>
             <p className="text-lg md:text-xl mb-6 text-muted-foreground animate-fade-in">
-              Engineered innovative solutions like a distributed code evaluation engine processing 120+ concurrent tests/sec.
+              Bridging the gap between complex backend logic and seamless user experiences.
             </p>
             <p className="text-base md:text-lg italic text-primary mb-8 animate-slide-up">
-              "Building the future with code that scales elegantly – one innovative line at a time."
+              "Building robust, scalable platforms where performance meets usability."
             </p>
             <Link
               to="projects"

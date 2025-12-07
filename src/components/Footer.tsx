@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground text-center md:text-left">
-            2025 Parisa Gunasekhar
+            2024 Parisa Gunasekhar
           </p>
 
           <p className="text-sm text-muted-foreground">
