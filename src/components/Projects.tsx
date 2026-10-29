@@ -1,47 +1,47 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Github, ExternalLink } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Github } from 'lucide-react';
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const projects = [
     {
-      name: 'EvalX - Online Code Execution Engine',
+      name: 'EvalX - Distributed Online Code Execution Engine',
       logo: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765108066/Upfoto_NpBlfTpHCOfAdkA81guvoMXeNwnLxWrk2atF5mxFvMsnt_1_tnvuet.jpg',
       description: [
-        'Engineered a distributed, low-latency code evaluation engine in Rust',
-        'Processing 120+ concurrent tests/sec with high reliability',
-        'Deployed on AWS using Docker containers for scalability',
-        'Implemented Redis for caching and queue management',
+        'Engineered a distributed, event-driven microservices code evaluation engine in Rust',
+        'Optimized concurrency algorithms to process 120+ concurrent test cases per second',
+        'Architected a fault-tolerant storage layer using PostgreSQL and Redis',
+        'Integrated Amazon SQS to manage asynchronous workload queues and decouple execution state',
       ],
-      techStack: ['Rust', 'Isolate', 'Docker', 'AWS', 'Redis'],
+      techStack: ['Rust', 'Isolate', 'Docker', 'Amazon SQS', 'PostgreSQL', 'Redis'],
       github: 'https://github.com/imguna2218/The-EvalX',
       demo: '#',
     },
     {
-      name: 'PatrolX - Patrol Monitoring App',
-      logo: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765108308/Screenshot_2025-12-07_172123_fdosyf.png',
+      name: 'IgnisOps - AI Powered Cloud Development Environment',
+      logo: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765108066/Upfoto_NpBlfTpHCOfAdkA81guvoMXeNwnLxWrk2atF5mxFvMsnt_1_tnvuet.jpg',
       description: [
-        'Architected a patrol monitoring app in React Native',
-        'End-to-end incident management system with real-time updates',
-        'Integrated PostgreSQL database with Prisma ORM',
-        'Built responsive UI with TypeScript for type safety',
+        'Architected a secure Node.js backend using Firecracker MicroVMs for sub-200ms cold starts',
+        'Developed a 3-tier LLM-powered Agentic AI pipeline (Planner, Coder, Verifier)',
+        'Utilized PostgreSQL and Redis to drive AI automation and context-aware state management',
+        'Engineered a Next.js/React frontend for provisioning multi-language workspaces (Java, Python)',
       ],
-      techStack: ['React Native', 'TypeScript', 'PostgreSQL', 'Prisma'],
+      techStack: ['Node.js', 'Firecracker MicroVMs', 'Next.js', 'WebSockets', 'LLMs'],
       github: 'https://github.com/imguna2218',
       demo: '#',
     },
     {
-      name: 'SyncStream - Social Audio Streaming Platform',
-      logo: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765108432/Screenshot_2025-12-07_172341_yotdrs.png',
+      name: 'PatrolX - Mobile Patrol Monitoring Platform',
+      logo: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765108308/Screenshot_2025-12-07_172123_fdosyf.png',
       description: [
-        'Developed a full-stack social audio streaming platform',
-        'Real-time features using WebSockets for live interactions',
-        'Built with TypeScript and Node.js backend',
-        'Scalable architecture supporting multiple concurrent streams',
+        'Architected a cross-platform mobile patrol monitoring app in React Native',
+        'Engineered an end-to-end incident management system with real-time GPS tracking',
+        'Integrated a relational PostgreSQL database utilizing Prisma ORM',
+        'Built responsive, typed UIs with TypeScript for maximum runtime safety',
       ],
-      techStack: ['TypeScript', 'Node.js', 'WebSockets'],
+      techStack: ['React Native', 'TypeScript', 'PostgreSQL', 'Prisma'],
       github: 'https://github.com/imguna2218',
       demo: '#',
     },
@@ -87,7 +87,7 @@ const Projects = () => {
                 <img
                   src={currentProject.logo}
                   alt={currentProject.name}
-                  className="w-16 h-16 rounded-xl border-2 border-primary"
+                  className="w-16 h-16 rounded-xl border-2 border-primary object-cover"
                 />
                 <div className="flex-1">
                   <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
@@ -128,15 +128,7 @@ const Projects = () => {
                   <Github size={20} />
                   View on GitHub
                 </a>
-                {/* <a
-                  href={currentProject.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 border border-primary text-foreground px-6 py-3 rounded-full font-semibold hover:bg-primary/10 transition-colors"
-                >
-                  <ExternalLink size={20} />
-                  Live Demo
-                </a> */}
+                {/* Live Demo hidden as per spec */}
               </div>
             </motion.div>
           </AnimatePresence>

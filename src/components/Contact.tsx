@@ -70,7 +70,7 @@ const Contact = () => {
     {
       name: 'LinkedIn',
       icon: FaLinkedin,
-      url: 'https://linkedin.com/in/guna-sekhar-parisa',
+      url: 'https://www.linkedin.com/in/gunasekhar-parisa',
       color: 'hover:text-[#0077B5]',
     },
     {

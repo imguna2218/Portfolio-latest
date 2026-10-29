@@ -8,28 +8,23 @@ const Achievements = () => {
   const achievements = [
     {
       id: 1,
-      image: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765109271/Screenshot_2025-12-07_173733_hd0wke.png',
-      description: "Won 1st Prize at Siddartha Academy of Higher Education's Innovation Day for EvalX project.",
+      image: '/images/innovation_day.png',
+      description: "Won 1st Prize at Siddhartha Academy of Higher Education's Innovation Day for the EvalX project.",
     },
     {
       id: 2,
       image: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765109193/vr_1_mrumhj.jpg',
-      description: 'Won 1st prize in VR Siddartha International Hackathon, Code Geeks track.',
+      description: 'Won 1st prize in VR Siddhartha International Hackathon, Code Geeks track.',
     },
     {
       id: 3,
       image: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765109064/hackit_1_cnneev.jpg',
-      description: 'Won 1st prize in HackIT (college) in WEB DEVELOPMENT domain.',
+      description: 'Won 1st prize in HackIT conducted at LBRCE in the WEB DEVELOPMENT domain.',
     },
     {
       id: 4,
-      image: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765109123/itgrp_1_p37dcq.jpg',
-      description: 'Won 2nd Prize in MERN Stack Hackathon (Team Lead).',
-    },
-    {
-      id: 5,
       image: 'https://res.cloudinary.com/di4cyrn81/image/upload/v1765109497/Screenshot_2025-12-07_174122_og4bhy.png',
-      description: 'Awarded 100 Days, 50 Days badges on LeetCode for consistent performance.',
+      description: 'Solved 500+ algorithmic problems in Java, earning the 100-day badge twice on LeetCode.',
     },
   ];
 

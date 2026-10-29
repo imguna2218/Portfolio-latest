@@ -166,3 +166,27 @@
 .animate-slide-up {
   animation: slide-up 0.6s ease-out;
 }
+
+/* Skill chip float animations — four variants with different timings/heights */
+@keyframes float-a {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-7px); }
+}
+@keyframes float-b {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-5px); }
+}
+@keyframes float-c {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-9px); }
+}
+@keyframes float-d {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-4px); }
+}
+
+.animate-float-a { animation: float-a 3.2s ease-in-out infinite; }
+.animate-float-b { animation: float-b 2.8s ease-in-out infinite 0.4s; }
+.animate-float-c { animation: float-c 3.8s ease-in-out infinite 0.8s; }
+.animate-float-d { animation: float-d 2.5s ease-in-out infinite 1.2s; }
+

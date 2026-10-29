@@ -58,16 +58,16 @@ const Hero = () => {
             className="text-center md:text-left"
           >
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-4 gradient-text">
-              Software Developer
+              Software Engineer & AI Builder
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-foreground">
-              Full-Stack Developer / 2026 GRAD
+              Backend Infrastructure / 2026 GRAD
             </h2>
             <p className="text-lg md:text-xl mb-6 text-muted-foreground animate-fade-in">
-              Bridging the gap between complex backend logic and seamless user experiences.
+              Building secure, intelligent, and high-performing enterprise applications with AI-assisted engineering.
             </p>
             <p className="text-base md:text-lg italic text-primary mb-8 animate-slide-up">
-              "Building robust, scalable platforms where performance meets usability."
+              "Architecting fault-tolerant microservices where performance meets scale."
             </p>
             <Link
               to="projects"
