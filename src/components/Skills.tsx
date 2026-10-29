@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import {
   SiPython, SiJavascript, SiTypescript, SiRust,
   SiSpring, SiFastapi, SiNodedotjs, SiExpress, SiNestjs,
-  SiReact, SiNextdotjs, SiHtml5, SiCss,
+  SiReact, SiNextdotjs, SiHtml5, SiCss3,
   SiPostgresql, SiMongodb, SiRedis, SiApachekafka,
   SiPostman, SiGit, SiGithub,
   SiDocker, SiKubernetes,
@@ -48,7 +48,7 @@ const categories: Category[] = [
       { name: 'React.js',       icon: SiReact,        color: '#61dafb' },
       { name: 'Next.js',        icon: SiNextdotjs,    color: '#ffffff' },
       { name: 'HTML5',          icon: SiHtml5,        color: '#e34f26' },
-      { name: 'CSS3',           icon: SiCss,          color: '#1572b6' },
+      { name: 'CSS3',           icon: SiCss3,          color: '#1572b6' },
       { name: 'REST APIs',      icon: FaCode,         color: '#a7b4c9' },
     ],
   },
